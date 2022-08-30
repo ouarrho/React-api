@@ -5,7 +5,17 @@
 
 	import Header from './components/layouts/Header';
 
-	import HomePage from './routes/Home';
+	import HomePage      from './routes/Home';
+
+	import FormsPage     from './routes/Forms';
+	import FormPage      from './routes/Form';
+
+	import QuotesPage    from './routes/Quotes';
+	import QuotePage     from './routes/Quote';
+
+	import ContractsPage from './routes/Contracts';
+	import ContractPage  from './routes/Contract';
+
 
 	function App(){
 
@@ -23,11 +33,17 @@
 							
 							<Route exact path="/" children={ <HomePage /> } />
 							
-							<Route exact path="/Forms" children={ <HomePage /> } />
+							<Route exact path="/Forms" children={ <FormsPage /> } />
+
+							<Route exact path="/Form/:id" render={(props) => <FormPage {...props} />} />
 							
-							<Route exact path="/Quotes" children={ <HomePage /> } />
+							<Route exact path="/Quotes" children={ <QuotesPage /> } />
+
+							<Route exact path="/Quote/:id" render={(props) => <QuotePage {...props} />} />
 							
-							<Route exact path="/Contracts" children={ <HomePage /> } />
+							<Route exact path="/Contracts" children={ <ContractsPage /> } />
+
+							<Route exact path="/Contract/:id" render={(props) => <ContractPage {...props} />} />
 
 						</Switch>
 

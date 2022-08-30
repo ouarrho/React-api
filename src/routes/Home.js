@@ -1,6 +1,13 @@
 
 	import React, { Component } from 'react';
 
+/**
+	*
+	* Components
+	* 
+*/
+	import Card from '../components/layouts/Card';
+
 
 	export class HomePage extends Component {
 
@@ -10,7 +17,15 @@
 
 				<>
 
-					<h1 className="text-center">Hello :)</h1>
+					<div className="row mt-4">
+
+						<Card />
+
+						<Card />
+
+						<Card />
+
+					</div>
 
 				</>
 

@@ -6,7 +6,7 @@
 /**
 	*
 	* Components
-	* 
+	*
 */
 	import Header from './components/layouts/Header';
 
@@ -14,7 +14,7 @@
 /**
 	*
 	* Routes
-	* 
+	*
 */
 	import HomePage      from './routes/Home';
 
@@ -44,18 +44,6 @@
 
 							<Route exact path="/" children={ <HomePage /> } />
 
-							<Route exact path="/Forms" children={ <FormsPage /> } />
-
-							<Route exact path="/Form/:id" render={(props) => <FormPage {...props} />} />
-
-							<Route exact path="/Quotes" children={ <QuotesPage /> } />
-
-							<Route exact path="/Quote/:id" render={(props) => <QuotePage {...props} />} />
-
-							<Route exact path="/Contracts" children={ <ContractsPage /> } />
-
-							<Route exact path="/Contract/:id" render={(props) => <ContractPage {...props} />} />
-
 						</Switch>
 
 					</div>
@@ -69,3 +57,19 @@
 	}
 
 	export default App;
+
+	/*
+
+
+							<Route exact path="/Forms" children={ <FormsPage /> } />
+
+							<Route exact path="/Form/:id" render={(props) => <FormPage {...props} />} />
+
+							<Route exact path="/Quotes" children={ <QuotesPage /> } />
+
+							<Route exact path="/Quote/:id" render={(props) => <QuotePage {...props} />} />
+
+							<Route exact path="/Contracts" children={ <ContractsPage /> } />
+
+							<Route exact path="/Contract/:id" render={(props) => <ContractPage {...props} />} />
+							*/
